@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Omni Foods|Menu</title>
+	<!-- CSS LINK -->
+	<link rel="stylesheet" type="text/css" href="css/menu-style.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<!-- FONT AWESOME LINK CDN -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+			<div class="container">	
+				<div class="contain">	
+					<div class="logo-part">
+						<a href="home.html"><h1><i class="fas fa-pepper-hot"></i><span> Omni</span> Foods</h1></a>
+					</div>
+					<div class="nav-links">
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="menu.html">Menu</a></li>
+							<li><a href="privacy-policy.html">Our Policy</a></li>
+							<li><a href="contact-us.html">Contact us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</header>
+    <div class="nav-bar-menu">
+        <ul class="nav-menu">
+            <li><a class="navbar" href="#bestitems">Best Items</a></li>
+            <li><a class="navbar" href="#deals">Deals</a></li>
+            <li><a class="navbar" href="#pizza">Pizza</a></li>
+            <li><a class="navbar" href="#burgers">Burgers</a></li>
+            <li><a class="navbar" href="#beverage">Beverages</a></li>
+        </ul>
+    </div>
+    <section id="bestitems">
+        <h2>Best Items</h2>
+        <div class="row">
+            <div class="col span-1-of-4" id="1">
+                <img src="menu_images/pexels-marina-utrabo-4661888.jpg" class="menu1">
+                <div class="image-1">
+                    <span class="item-title">Beef Steak</span><br>
+                    <span class="price">$10</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(1)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="2">
+                <img src="menu_images/menu2.png" class="menu2">
+                <div class="image-2">
+                    <span class="item-title">Mexican Pizza</span><br>
+                    <span class="price">$20</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(2)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="3">
+                <img src="menu_images/pexels-rajesh-tp-1633578.jpg" class="menu3">
+                <div class="image-3">
+                    <span class="item-title">Beef Cheese Burger</span><br>
+                    <span class="price">$8</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(3)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="4">
+                <img src="menu_images/pexels-kevin-menajang-982612.jpg" class="menu4">
+                <div class="image-4">
+                    <span class="item-title">Cappuccino</span><br>
+                    <span class="price">$22</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(4)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="deals">
+        <h2>Deals</h2>
+        <div class="row">
+            <div class="col span-1-of-4" id="5">
+                <img src="menu_images/pexels-jonathan-borba-2983103.jpg" class="menu1">
+                <div class="image-1">
+                    <span class="item-title">Deal 1</span><br>
+                    <ul class="menudeals">
+                        <li>1x Chicken Burger</li>
+                        <li>500ml/1.5L Drink</li>
+                    </ul>
+                    <span class="price">$10</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="uc(5)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="6">
+                <img src="menu_images/menu2.png" class="menu2">
+                <div class="image-2">
+                    <span class="item-title">Deal 2</span><br>
+                    <ul class="menudeals">
+                        <li>1x Regular Pizza</li>
+                        <li>500ml/1.5L Drink</li>
+                    </ul>
+                    <span class="price">$20</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="uc(6)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="7">
+                <img src="menu_images/pexels-rajesh-tp-1633578.jpg" class="menu3">
+                <div class="image-3">
+                    <span class="item-title">Deal 3</span><br>
+                    <ul class="menudeals">
+                        <li>3x Large Pizza</li>
+                        <li>2 x500ml/1.5L Drink</li>
+                    </ul>
+                    <span class="price">$8</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="uc(7)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="8">
+                <img src="menu_images/mahyar-motebassem-IXdItk-q7hE-unsplash.jpg" class="menu4">
+                <div class="image-4">
+                    <span class="item-title">Deal 4</span><br>
+                    <ul class="menudeals">
+                        <li>1x Special Jumbo Pizza</li>
+                        <li>2x Jumbo Drinks</li>
+                    </ul>
+                    <span class="price">$22</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="uc(8)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pizza">
+        <h2>Pizza</h2>
+        <div class="row">
+            <div class="col span-1-of-4" id="9">
+                <img src="menu_images/menu2.png" class="menu1">
+                <div class="image-1">
+                    <span class="item-title">Mexican Pizza</span><br>
+                    <span class="price">$10</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(9)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="10">
+                <img src="menu_images/pexels-jonathan-petersson-1166120.jpg" class="menu2">
+                <div class="image-2">
+                    <span class="item-title">Rancheeza Pizza</span><br>
+                    <span class="price">$20</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(10)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="11">
+                <img src="menu_images/pexels-roman-odintsov-4553123.jpg" class="menu3">
+                <div class="image-3">
+                    <span class="item-title">Chicken Fajita Pizza</span><br>
+                    <span class="price">$8</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(11)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="12">
+                <img src="menu_images/pexels-pixabay-315755.jpg" class="menu4"><br>
+                <div class="image-4">
+                    <span class="item-title">Vegetable Pizza</span><br>
+                    <span class="price">$22</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(12)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-4" id="13">
+                <img src="menu_images/saahil-khatkhate-kfDsMDyX1K0-unsplash.jpg" class="menu1">
+                <div class="image-1">
+                    <span class="item-title">Creamy Pizza</span><br>
+                    <span class="price">$10</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(13)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="14">
+                <img src="menu_images/chad-montano-MqT0asuoIcU-unsplash (2).jpg" class="menu2">
+                <div class="image-2">
+                    <span class="item-title">Chicken Smoked Pizza</span><br>
+                    <span class="price">$20</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(14)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="15">
+                <img src="menu_images/rahul-upadhyay-yDKHJxfiWDk-unsplash.jpg" class="menu3">
+                <div class="image-3">
+                    <span class="item-title">Afghani Tikka Pizza</span><br>
+                    <span class="price">$8</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(15)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="16">
+                <img src="menu_images/abdulaziz-alabdullah-BXhcvsiOEx8-unsplash.jpg" class="menu4">
+                <div class="image-4">
+                    <span class="item-title">Pepperoni Pizza</span><br>
+                    <span class="price">$22</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(16)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="burgers">
+        <h2>Burgers</h2>
+        <div class="row">
+            <div class="col span-1-of-4" id="17">
+                <img src="menu_images/pexels-samfotograffo-3052366.jpg" class="menu1">
+                <div class="image-1">
+                    <span class="item-title">Chicken Burger with Melted Cheese</span><br>
+                    <span class="price">$10</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(17)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="18">
+                <img src="menu_images/pexels-samfotograffo-3052364 (2).jpg" class="menu2">
+                <div class="image-2">
+                    <span class="item-title">Triple-Patty Cheese Burger</span><br>
+                    <span class="price">$20</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(18)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="19">
+                <img src="menu_images/pexels-rajesh-tp-1633578.jpg" class="menu3">
+                <div class="image-3">
+                    <span class="item-title">Beef Cheese Burger</span><br>
+                    <span class="price">$8</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(19)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="20">
+                <img src="menu_images/pexels-horizon-content-3738730.jpg" class="menu4">
+                <div class="image-4">
+                    <span class="item-title">Beef Mayo Burger</span><br>
+                    <span class="price">$22</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(20)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-4" id="21">
+                <img src="menu_images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg" class="menu1">
+                <div class="image-1">
+                    <span class="item-title">Chicken Burger with Melted Cheese</span><br>
+                    <span class="price">$10</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(21)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="22">
+                <img src="menu_images/food-photographer-david-fedulov-E94j3rMcxlw-unsplash.jpg" class="menu2">
+                <div class="image-2">
+                    <span class="item-title">Triple-Patty Cheese Burger</span><br>
+                    <span class="price">$20</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(22)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="23">
+                <img src="menu_images/camila-melim-RZjC6H7to1M-unsplash.jpg" class="menu3">
+                <div class="image-3">
+                    <span class="item-title">Beef Cheese Burger</span><br>
+                    <span class="price">$8</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(23)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="24">
+                <img src="menu_images/amirali-mirhashemian-uhgJYtrO3fY-unsplash.jpg" class="menu4">
+                <div class="image-4">
+                    <span class="item-title">Beef Creamy Burger</span><br>
+                    <span class="price">$22</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(24)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="beverage">
+        <h2>Beverages</h2>
+        <div class="row">
+            <div class="col span-1-of-4" id="25">
+                <img src="menu_images/pexels-cottonbro-4686940.jpg" class="menu1">
+                <div class="image-1">
+                    <span class="item-title">Cocktail</span><br>
+                    <span class="price">$10</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(25)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="26">
+                <img src="menu_images/pexels-jonathan-borba-2983100.jpg" class="menu2">
+                <div class="image-2">
+                    <span class="item-title">Coca-Cola</span><br>
+                    <span class="price">$20</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(26)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="27">
+                <img src="menu_images/pexels-charlotte-may-5946627.jpg" class="menu3">
+                <div class="image-3">
+                    <span class="item-title">Lemonade</span><br>
+                    <span class="price">$8</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(27)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="28">
+                <img src="menu_images/pexels-purple-smith-4556246 (1).jpg" class="menu4">
+                <div class="image-4">
+                    <span class="item-title">Orange Juice</span><br>
+                    <span class="price">$22</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(28)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-4" id="29">
+                <img src="menu_images/pexels-carlo-fuentelsaz-3821694 (1).jpg" class="menu1">
+                <div class="image-1">
+                    <span class="item-title">Strawberry Cocktail</span><br>
+                    <span class="price">$10</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(29)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="30">
+                <img src="menu_images/pexels-kevin-menajang-982612.jpg" class="menu2">
+                <div class="image-2">
+                    <span class="item-title">Cappuccino</span><br>
+                    <span class="price">$20</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(30)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="31">
+                <img src="menu_images/rumman-amin-bJzJH85Kp7g-unsplash.jpg" class="menu3">
+                <div class="image-3">
+                    <span class="item-title">Tea with Cookies</span><br>
+                    <span class="price">$8</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(31)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4" id="32">
+                <img src="menu_images/pexels-horizon-content-3738730.jpg" class="menu4">
+                <div class="image-4">
+                    <span class="item-title">Muffin Cake</span><br>
+                    <span class="price">$22</span><br>
+                    <div class="button">
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="add(32)"><i class="fas fa-shopping-cart"></i><span>Add To Cart</span></h4></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container content-section" id="cart">
+        <h2 class="section-header">Cart</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">Item</span>
+            <span class="cart-price cart-header cart-column">Price</span>
+            <span class="cart-quantity cart-header cart-column">Quantity</span>
+        </div>
+        <div id="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price" id="result">0</span>
+        </div>
+        <div id="cart-result"></div>
+        <button class="btn btn-primary btn-purchase" type="button" onclick="end()" id="reset">Purchase</button>
+    </section>
+
+
+
+	<footer>
+		<div class="footer-grid">
+			<div class="column1">
+				<h3>Links...</h3>
+				<div class="nav-links">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="privacy-policy.html">Our Policy</a></li>
+						<li><a href="contact-us.html">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="column2">
+				<h3>Contact Us...</h3>
+				<div class="footer-social-links">
+					<a href=""><i class="fab fa-facebook"></i>&nbsp;&nbsp;www.facebook.com/O_F</a>
+					<a href=""><i class="fab fa-instagram"></i>&nbsp;&nbsp;www.instagram.com/O_F</a>
+					<a href=""><i class="fab fa-linkedin"></i>&nbsp;&nbsp;www.linkedin.com/O_F</a>
+					<a href=""><i class="fab fa-twitter"></i>&nbsp;&nbsp;www.twitter.com/O_F</a>
+				</div>
+			</div>
+			<div class="column3">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.4407130400054!2d67.07879609766573!3d24.81459782372587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33c62f239e641%3A0x4e41a2d7dd487cfc!2sDHA%20Suffa%20University!5e0!3m2!1sen!2s!4v1608629777444!5m2!1sen!2s" width="250" height="175" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+			<div class="column4">
+				<h1>Thank You</h1>
+			</div>
+		</div>
+		<div class="copyright">
+			<small>&copy;<span class="c1">Copyrights reserved</span><br><span class="c2">to all admins of Omni Foods...<br>1980-</span><span class="c3">2021</span></small>
+		</div>
+	</footer>
+</body>
+	<script type="text/javascript" src="java-script/menu.js"></script>
+</html>

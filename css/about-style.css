@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* font-family: 'Yeon Sung', cursive; */
+/* font-family: 'poppins', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Great Vibes', cursive; */
+
+/* --------VARIABLES------------ */
+
+:root{
+	--logo: 'Yeon Sung', cursive;
+	--main:'poppins', sans-serif;
+	--button: ;
+}
+
+/* Global */
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: var(--main);
+}
+
+.btn{
+	outline: none;
+	cursor: pointer;
+	border: none;
+}
+
+.container{
+	margin: auto;
+	width: 80%;
+	position: relative;
+}
+
+ul{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+
+
+/* -----------HEADING IN CENTER (MAIN HEADINGS)---------------- */
+section .heading{
+	
+}
+
+section .heading h1{
+	margin-top: 3rem;
+	font-size: 55px;
+	font-family: 'Yeon Sung', cursive;
+	font-weight: 500;
+}
+
+section .heading hr{
+	width: 8%;
+    display: inline-block;
+    background-color: #d00000;
+    height: 4px;
+    border: none;
+    border-radius: 5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+/* -X-----X-----X-----HEADING IN CENTER (MAIN HEADINGS)----X-----X-----X-- */
+
+
+
+
+
+/* -=====------------------HEADER---------------------------- */
+
+header{
+	z-index: 1000;
+	position: sticky;
+	top: 0;
+	left: 0;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	background: #e9ecef/* ecf8f8 */;
+}
+
+header .contain{
+	display: flex;
+	justify-content: space-between;
+}
+
+header .logo-part{
+	margin: .7em .8em;
+}
+
+header .logo-part a h1{
+	font-family: var(--logo);
+	font-size: 30px;
+	color: black;
+}
+
+header .logo-part a h1 span{
+	color: #d00000;
+	font-size: 32px;
+	font-family: var(--logo);
+}
+
+header .logo-part a h1 i{
+	color : #f4d35e;
+}
+
+header .logo-part a h1 i::before{
+	background: #d00000;
+	border-radius: 5rem;
+	background-position: -8px;
+	padding: 8px;
+	border: 5px solid black;
+}
+
+header .nav-links ul{
+	margin: 1.6em .8em .5em 0;
+}
+
+header .nav-links ul li{
+	display: inline;
+}
+
+header .nav-links ul a{
+	display: inline-block;
+	margin: 0 .8em;
+	font-size: 15px;
+	color: black;
+	padding-bottom: 2px;
+	position: relative;
+}
+
+header .nav-links ul a::before{
+	content: " ";
+    position: absolute;
+    left: 2px;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #dc2f02;
+    transform: scale3d(0, 1, 1);
+    transition: all 0.3s ease;
+}
+
+header .nav-links ul a:hover::before{
+	transform: scale3d(1, 1, 1);
+}
+
+
+
+
+
+/* ------------------------------------------ ABOUT US ------------------------------------------------ */
+
+
+
+
+
+.section{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-grid{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	
+	background: #f4f3ee;
+	border-radius: 30px;
+	min-height: 500px;
+	margin: 20px 0;
+}
+
+.about-grid .content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 30px;
+}
+
+.about-grid .content h1{
+	font-family: 'Yeon Sung', cursive;
+	font-size: 35px;
+	margin-bottom: 10px;
+	border-bottom: 3px solid #d00000;
+	border-radius: 10px;
+}
+
+.about-grid .content p{
+	font-size: 15.5px;
+	padding: 15px;
+}
+
+.about-grid .img-ab{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-grid .img-ab .img-r{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.about-grid .img-ab .img-r .image{
+	object-fit: cover;
+}
+
+.about-grid .img-ab .img-r .image.img1{
+	border-radius: 90px 90px 90px 0;
+}
+
+.about-grid .img-ab .img-r .image.img2{
+	border-radius: 90px 90px 0 90px;
+}
+
+.about-grid .img-ab .img-r .image.img3{
+	border-radius: 90px 90px 90px 0;
+}
+
+.about-grid .img-ab .img-r .image.img4{
+	border-radius: 90px 90px 0 90px;
+}
+
+.about-grid .img-ab .img-r .image.img5{
+	border-radius: 90px 90px 90px 0;
+}
+
+
+.section.section1{
+	background: url('../assets/about-img-1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.section.section2{
+	background: url('../assets/about-img-2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.section.section3{
+	background: url('../assets/about-img-3.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.section.section4{
+	background: url('../assets/about-img-4.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.section.section5{
+	background: url('../assets/about-img-5.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+
+.section.section1 .overlay-div{
+	background: #d00000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: overlay;
+	opacity: .6;
+}
+
+.section.section2 .overlay-div{
+	background: yellow;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: overlay;
+	opacity: .5;
+}
+
+.section.section3 .overlay-div{
+	background: purple;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: overlay;
+	opacity: .8;
+}
+
+.section.section4 .overlay-div{
+	background: lightblue;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: overlay;
+	opacity: .8;
+}
+
+.section.section5 .overlay-div{
+	background: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: overlay;
+	opacity: .5;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------ FOOTER ------------------------------------------------ */
+
+
+footer{
+	color: white;
+	background: #161623;
+	padding: 1rem 2.5rem;
+}
+
+footer .footer-grid{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	margin-bottom: 5rem;
+	margin-left: 5rem;
+}
+
+footer .footer-grid .column1 h3{
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer .footer-grid .column1 .nav-links{
+	margin: 1rem 0 0 2rem;
+}
+
+footer .footer-grid .column1 .nav-links li a{
+	color: #495057;
+	font-size: 15px;
+	line-height: .5;
+}
+
+footer .footer-grid .column1 .nav-links li a:hover{
+	color: white;
+}
+
+footer .footer-grid .column2 h3{
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer .footer-grid .column2 .footer-social-links{
+	margin: 1rem 0 0 2rem;
+}
+
+footer .footer-grid .column2 .footer-social-links a{
+	color: #495057;
+	font-size: 15px;
+}
+
+footer .footer-grid .column2 .footer-social-links a i{
+	font-size: 18px;
+}
+
+footer .footer-grid .column2 .footer-social-links a:hover{
+	color: white;
+}
+
+footer .footer-grid .column4{
+	text-align: center;
+	position: relative;
+	justify-content: center;
+}
+
+footer .footer-grid .column4 h1{
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	font-family: 'Great Vibes', cursive;	
+	font-size: 50px;
+	color: #d00000;
+}
+
+footer .copyright{
+	text-align: center;
+	line-height: 1;
+}
+
+footer .copyright .c1{
+	font-size: 16px;
+}
+
+footer .copyright .c2{
+	color: #495057;
+}
+
+footer .copyright .c3{
+	font-size: 25px;
+	color: #d00000;
+	font-weight: 800;
+	display: inline-block;
+	margin-top: 5px;
+}

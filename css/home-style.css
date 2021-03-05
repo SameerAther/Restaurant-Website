@@ -1,0 +1,879 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* font-family: 'Yeon Sung', cursive; */
+/* font-family: 'poppins', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Great Vibes', cursive; */
+
+
+/* --------VARIABLES------------ */
+
+:root{
+	--logo: 'Yeon Sung', cursive;
+	--main:'poppins', sans-serif;
+	--button: ;
+}
+
+/* Global */
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: var(--main);
+}
+
+.btn{
+	outline: none;
+	cursor: pointer;
+	border: none;
+}
+
+.container{
+	margin: auto;
+	width: 80%;
+	position: relative;
+}
+
+ul{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+
+
+/* -----------HEADING IN CENTER (MAIN HEADINGS)---------------- */
+section .heading{
+	text-align: center;
+}
+
+section .heading h1{
+	margin-top: 3rem;
+	text-align: center;
+	font-size: 55px;
+	font-family: 'Yeon Sung', cursive;
+	font-weight: 500;
+}
+
+section .heading hr{
+	width: 8%;
+    display: inline-block;
+    background-color: #d00000;
+    height: 4px;
+    border: none;
+    border-radius: 5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+/* -X-----X-----X-----HEADING IN CENTER (MAIN HEADINGS)----X-----X-----X-- */
+
+
+
+
+
+
+/* ------------------------------------------FIRST SECTION------------------------------------------------ */
+
+/* ----------SHOW CASE----------- */
+
+.showcase{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.showcase video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+.showcase .div1{
+	background: black ;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: overlay;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+.showcase .div2{
+	background: #dc2f02 ;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: overlay;
+	opacity:0.5;
+	z-index: -1;
+}
+
+
+
+
+
+/* -=====-----HEADER------------ */
+
+.showcase .head{
+	display: flex;
+	justify-content: space-between;
+	z-index: 1000;
+}
+
+.showcase .head .logo-part{
+	margin: .7em .8em;
+}
+
+.showcase .head .logo-part a h1{
+	font-family: var(--logo);
+	font-size: 30px;
+	color: white;
+}
+
+.showcase .head .logo-part a h1 span{
+	color: #d00000;
+	font-size: 32px;
+	font-family: var(--logo);
+}
+
+.showcase .head .logo-part a h1 i{
+	color : #f4d35e;
+}
+
+.showcase .head .logo-part a h1 i::before{
+	background: #d00000;
+	border-radius: 5rem;
+	background-position: -8px;
+	padding: 8px;
+	border: 3px solid white;
+}
+
+.showcase .head .nav-links ul{
+	margin: 1.6em .8em .5em 0;
+}
+
+.showcase .head .nav-links ul li{
+	display: inline;
+}
+
+.showcase .head .nav-links ul a{
+	display: inline-block;
+	margin: 0 .8em;
+	font-size: 15px;
+	color: white;
+	padding-bottom: 2px;
+	position: relative;
+}
+
+.showcase .head .nav-links ul a::before{
+	content: " ";
+    position: absolute;
+    left: 2px;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #dc2f02;
+    transform: scale3d(0, 1, 1);
+    transition: all 0.3s ease;
+}
+
+.showcase .head .nav-links ul a:hover::before{
+	transform: scale3d(1, 1, 1);
+}
+
+
+
+
+/* ---------------------CONTENT PART--------------- */
+
+.showcase .main{
+	margin-top: 8rem;
+	max-width: 60%;
+	z-index: 500;
+	align-items: center;
+	position: relative;
+}
+
+.showcase .main h1{
+	font-size: 48px;
+	line-height: 1;
+	margin-bottom: 8px;
+	color: white;
+	font-weight: 400;
+}
+
+.showcase .main h1 span{
+	font-size: 58px;
+	text-transform: uppercase;
+	color: #d00000;
+	font-weight: 800;
+}
+
+.showcase .main p{
+	font-size: 15px;
+	color: white;
+	margin-bottom: 3rem;
+}
+
+
+.showcase .main .buttons .btn{
+	padding: .8rem 1.5rem;
+	border-radius: 5rem;
+	border: none;
+	font-size: 15px;
+}
+
+.showcase .main .buttons .signup-btn{
+	margin-right: 1rem;
+	margin-left: .5rem;
+	background: #dc2f02;
+	color: white;
+}
+
+.showcase .main .buttons .signup-btn:hover{
+	box-shadow: 0px 0px 20px #dc2f02;
+}
+
+.showcase .main .buttons .tab-btn{
+	background: transparent;
+	border: 2px solid #dc2f02;
+	color: #dc2f02;
+	transition: .2s;
+}
+
+.showcase .main .buttons .tab-btn:hover{
+	background: #dc2f02;
+	color: white;
+}
+
+
+
+/* -----------------SOCIAL MEDIA LINKS------------------- */
+
+.showcase .landing-social-links{
+	position: absolute;
+	right: 0;
+}
+
+.showcase .landing-social-links:hover i{
+	transform: translateY(-90%);
+}
+
+.showcase .landing-social-links a{
+	color: white;
+	margin: 10px;
+	font-size: 22px;
+}
+
+.showcase .landing-social-links a i{
+	transition: .2s;
+}
+
+.showcase .landing-social-links .fb:hover{
+	transform: translateY(-90%) scale(1.5);
+	color: #3993dd;
+}
+.showcase .landing-social-links .inst:hover{
+	transform: translateY(-90%) scale(1.5);
+	color: #f4a261;
+}
+.showcase .landing-social-links .twit:hover{
+	transform: translateY(-90%) scale(1.5);
+	color: #8acdea;
+
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------2ND SECTION------------------------------------------------ */
+
+/* ---------------- FEATURES --------------------- */
+
+
+section .features-grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+section .features-grid .feature{
+	text-align: center;
+	padding: 40px 20px 40px 20px;
+	border-radius: 2rem;
+}
+
+section .features-grid .feature i{
+	color: #d00000;
+}
+
+section .features-grid .feature:hover{
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+	background: #f8f9fa;
+}
+
+
+section .features-grid .feature .feature-content{
+	margin-top: 1rem;
+	text-align: center;
+}
+
+section .features-grid .feature .feature-content hr{
+	width: 30%;
+	display: inline-block;
+	border: none;
+	border-radius: 5rem;
+	height: 2px;
+	background: #343a40;
+	margin-bottom: .2rem;
+	padding: 0;
+}
+
+section .features-grid .feature .feature-content h2{
+	
+	font-size: 28px;
+	font-weight: 400;
+}
+
+section .features-grid .feature .feature-content p{
+	margin: .2rem 0 2rem 0;
+	font-size: 15px;
+	color:  #495057;
+}
+
+section .features-grid .feature .feature-content .feature-btn{
+	padding: .3rem 2rem;
+	border-radius: 5px;
+	background: #1e96fc;
+	color: white;
+
+}
+
+
+
+
+
+
+
+/* --------------------------------- MENU "CAROUSEL"(Not exactly)------------------------------------- */
+
+.slide-1,.slide-2,.slide-3,.slide-4,.slide-5{
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.trans i{
+	padding-right: 10px;
+	height: 10px;
+}
+.trans{
+	padding-top: 400px;
+	padding-left: 100px;
+}
+.trans a{
+	border-color: white;
+	border: 2px solid white;
+	text-decoration: none;
+	color: white;
+	font-size: 40px;
+	background-color: transparent;
+	padding: 5px 10px;
+	cursor: pointer;
+	transform: translateY(50%);
+}
+.trans a:hover {
+	color: #d00000;
+	background-color: rgba(255,255,255,0.5);
+	transition: 0.5s;
+	border-color: #d00000;
+}
+
+.slide img{
+	z-index: -1;
+	width: 120%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	animation: zoom-out 15s linear infinite;
+}
+
+.slide-show{
+	position: relative;
+	width: 100%;
+	height: 90vh;
+	overflow: hidden;
+}
+
+
+@keyframes zoom-out{
+	100%{
+		width: 100%;
+	}
+}
+.slide-1{
+	animation: Slide\slide1 12s linear infinite; 
+}
+.slide-2{
+	animation: Slide\slide2 12s linear infinite; 
+}
+.slide-3{
+	animation: Slide\slide3 12s linear infinite; 
+}
+.slide-4{
+	animation: Slide\slide4 12s linear infinite; 
+}
+.slide-5{
+	animation: Slide\slide5 12s linear infinite; 
+}
+@keyframes Slide\slide1{
+	0%{
+		visibility: visible;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: visible;
+	}
+}
+@keyframes Slide\slide2{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: visible;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: hidden;
+	}
+}
+@keyframes Slide\slide3{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: visible;
+	}
+	100%{
+		visibility: hidden;
+	}
+}
+@keyframes Slide\slide4{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: visible;
+	}
+}
+@keyframes Slide\slide5{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: visible;
+	}
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------ OUR CHEFS------------------------------------------------ */
+
+.chef-section{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background: white /* #161623 */;
+}
+
+.chef-section::before{
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#f00, #f0f);
+	clip-path: circle(20% at right 60%);
+}
+
+
+.chef-section::after{
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#f00, #f0f);
+	clip-path: circle(25% at left 40%);
+}
+
+.chef-section .contain{
+	z-index: 3;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.chef-section .contain .card{
+	position: relative;
+	width: 320px;
+	height: 420px;
+	padding: 20px;
+	background: rgba(225, 225, 225, 0.05);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.chef-section .contain .card .content{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	transition: 0.5s;
+	opacity: 0.5;
+}
+
+.chef-section .contain .card:hover .content{
+	opacity: 1;
+	transform: translateY(-20px);
+}
+
+
+.chef-section .contain .card .content .img-bx{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 5px solid rgba(0, 0, 0, 0.25);
+	justify-content: center;
+	margin-left: 3.5rem;	
+}
+
+.chef-section .contain .card .content .img-bx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.chef-section .contain .card .content .content-bx h3{
+	font-size: 25px;
+	letter-spacing: 2px;
+	margin: 20px 0 10px 0;
+}
+
+.chef-section .contain .card .content .content-bx p{
+	line-height: 1;
+	font-size: 15px;
+}
+
+.chef-section .contain .card .sci{
+	position: absolute;
+	bottom: 30px;
+}
+
+.chef-section .contain .card .sci ul{
+	display: flex;
+}
+
+.chef-section .contain .card .sci li{
+	margin: 0 10px;
+	transform: translateY(48px);
+	transition: 0.5s;
+	transition-delay: calc(0.1s * var(--i));
+	opacity: 0;
+}
+
+.chef-section .contain .card:hover .sci li{
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.chef-section .contain .card .sci li a{
+	color: black;
+	font-size: 24px;
+}
+
+.chef-section .chef{
+	display: flex;
+	justify-content: center;
+}
+
+.chef-section .chef .btn{
+	margin: 4rem 0 5rem 0;
+	padding: .8rem 2.5rem;
+	border-radius: 5px;
+	background: #1e96fc;
+	color: white;
+	font-size: 16px; 
+}
+
+.chef-section .chef .btn:hover{
+	box-shadow: 0 0 15px #1e96fc;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------ OUR PRODUCTS------------------------------------------------ */
+
+.b-prod .img-p{
+	margin: auto;  
+	width: 85%;
+}
+
+.b-prod .content{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.b-prod .content img{
+	border-radius: 15px;
+}
+
+.b-prod .content .content-p{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.b-prod .content .content-p h3{
+	margin: 100px 0 0 25px;
+	text-transform: uppercase;
+	color: black;
+	font-size: 25px;
+	transform: translateY(150px);
+	transition: .5s;
+	font-family: 'montserrat', sans-serif;
+}
+
+.b-prod .content:hover .content-p h3{
+	transform: translateY(0);
+}
+
+.b-prod .content:hover img{
+	opacity: .5;
+}
+
+.b-prod p{
+	text-align: center;
+	color: #495057;
+}
+
+.b-prod .offer{
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem 4rem;
+}
+
+.b-prod .offer .content{
+	margin-top: 5px;
+}
+
+.b-prod .offer .content h2{
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.b-prod .offer .content h2 span{
+	font-size: 30px;
+	color: #495057;
+}
+
+.b-prod .offer .content h1{
+	font-size: 38px;
+	line-height: 1;
+	color: #d00000;
+}
+
+.b-prod .offer .icon i{
+	color: #495057;
+	font-size: 110px;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------ FOOTER ------------------------------------------------ */
+
+
+footer{
+	color: white;
+	background: #161623;
+	padding: 1rem 2.5rem;
+}
+
+footer .footer-grid{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	margin-bottom: 5rem;
+	margin-left: 5rem;
+}
+
+footer .footer-grid .column1 h3{
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer .footer-grid .column1 .nav-links{
+	margin: 1rem 0 0 2rem;
+}
+
+footer .footer-grid .column1 .nav-links li a{
+	color: #495057;
+	font-size: 15px;
+	line-height: .5;
+}
+
+footer .footer-grid .column1 .nav-links li a:hover{
+	color: white;
+}
+
+footer .footer-grid .column2 h3{
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer .footer-grid .column2 .footer-social-links{
+	margin: 1rem 0 0 2rem;
+}
+
+footer .footer-grid .column2 .footer-social-links a{
+	color: #495057;
+	font-size: 15px;
+}
+
+footer .footer-grid .column2 .footer-social-links a i{
+	font-size: 18px;
+}
+
+footer .footer-grid .column2 .footer-social-links a:hover{
+	color: white;
+}
+
+footer .footer-grid .column4{
+	text-align: center;
+	position: relative;
+	justify-content: center;
+}
+
+footer .footer-grid .column4 h1{
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	font-family: 'Great Vibes', cursive;	
+	font-size: 50px;
+	color: #d00000;
+}
+
+footer .copyright{
+	text-align: center;
+	line-height: 1;
+}
+
+footer .copyright .c1{
+	font-size: 16px;
+}
+
+footer .copyright .c2{
+	color: #495057;
+}
+
+footer .copyright .c3{
+	font-size: 25px;
+	color: #d00000;
+	font-weight: 800;
+	display: inline-block;
+	margin-top: 5px;
+}

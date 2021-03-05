@@ -1,0 +1,152 @@
+body{
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	font-family: 'Playfair Display', serif;
+	
+}
+.slide-1,.slide-2,.slide-3,.slide-4,.slide-5{
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+i{
+	padding-right: 10px;
+	height: 10px;
+}
+.trans{
+	padding-top: 400px;
+	padding-left: 100px;
+}
+.trans a{
+	border-color: white;
+	border: 2px solid white;
+	text-decoration: none;
+	color: white;
+	font-size: 50px;
+	background-color: transparent;
+	padding: 0px 10px;
+	cursor: pointer;
+}
+a:hover {
+	color: white;
+	background-color: rgba(255,255,255,0.5);
+	transition: 0.9s;
+	padding-right: 25px;
+}
+img{
+	z-index: -1;
+	width: 120%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	animation: zoom-out 3s linear infinite;
+}
+@keyframes zoom-out{
+	100%{
+		width: 100%;
+	}
+}
+.slide-1{
+	animation: Slide\slide1 12s linear infinite; 
+}
+.slide-2{
+	animation: Slide\slide2 12s linear infinite; 
+}
+.slide-3{
+	animation: Slide\slide3 12s linear infinite; 
+}
+.slide-4{
+	animation: Slide\slide4 12s linear infinite; 
+}
+.slide-5{
+	animation: Slide\slide5 12s linear infinite; 
+}
+@keyframes Slide\slide1{
+	0%{
+		visibility: visible;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: visible;
+	}
+}
+@keyframes Slide\slide2{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: visible;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: hidden;
+	}
+}
+@keyframes Slide\slide3{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: visible;
+	}
+	100%{
+		visibility: hidden;
+	}
+}
+@keyframes Slide\slide4{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: visible;
+	}
+}
+@keyframes Slide\slide5{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: visible;
+	}
+}
